@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" media="screen" href="/static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" media="screen" href="/static/css/font-awesome.min.css"/>
+    <link rel="stylesheet" media="screen" href="/static/site.css"/>
+
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        #mc_embed_signup {
+            clear: left;
+        }
+
+        #mc_embed_signup input.email {
+            font-size: 22px;
+            padding: 1em;
+            outline: 0;
+            border: 0;
+            font-family: 'Trirong', 'Times New Roman', serif;
+        }
+
+        #mc_embed_signup .button {
+            height: 44px;
+            background-color: #fff;
+            color: #222222;
+        }
+    </style>
+</head>
+<body>
+<header>
+    {% include "_nav.html" %}
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="main-caption-holder">
+                <h1 class="text-center text-muted">
+                    <span>&ldquo;</span>Even a tiny donation can make a huge difference.<span>&rdquo;</span>
+                </h1>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="background-accent-6">
+                <div class="padded">
+                    <h2>Help make TinyDonation a reality</h2>
+                </div>
+            </div>
+            <div class="background-accent-6-light">
+                <div class="padded">
+                    <p>
+                        You can help build a charitable platform for micro-giving. TinyDonation is raising money from
+                        people who are passionate about charitable giving to help start a platform for tiny donations!
+                    </p>
+                    <br/>
+                    <a class="btn btn-default" href="#">Contribute to our Kickstarter</a>
+                    <br/><br/>
+                    <p>Since TinyDonation is built on the idea of micro giving, please consider a donation of even just
+                        $1.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <div class="background-accent-1">
+                <div class="padded">
+                    <h2>&apos;Tis the season!</h2>
+                </div>
+                <div class="background-accent-1-light">
+                    <div class="padded">
+                        <p>
+                            The Holidays are a special time of the year! But let us not forget those who
+                            are less fortunate than us. Join TinyDonation in reinventing the concept of
+                            charitable donations. Donate to our kickstarter campaing, join our newsletter or
+                            let us know who you think you can help.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="background-accent-2">
+                <div class="padded">
+                    <h2>What is Micro Giving?</h2>
+                </div>
+                <div class="background-accent-2-light">
+                    <div class="padded">
+                        <p>
+                            The &lsquo;micro&rsquo; economy has taken off with the proliferation of crowdfunding,
+                            crowdlending
+                            and in technology with concepts such as microservices. Micro-giving is the idea of donating
+                            small amounts to charitable causes.
+                        </p>
+                        <p>
+                            <a href="http://blog.tinydonation.org" class="">Read our blog &rang;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-7">
+            <div class="background-accent-5">
+                <div class="padded">
+                    <h2>TinyDonation Road Map</h2>
+                </div>
+                <div class="background-accent-5-light">
+                    <div class="padded">
+                        <ul class="list-unstyled list-group roadmap">
+                            <li class="list-group-item"><i class="fa fa-road"></i> TinyDonation Fundraising
+                                <span class="label label-success">Now!</span>
+                            </li>
+                            <li class="list-group-item"><i class="fa fa-road"></i> Web application development</li>
+                            <li class="list-group-item"><i class="fa fa-road"></i> Native mobile application development</li>
+                            <li class="list-group-item"><i class="fa fa-road"></i> Platform API</li>
+                            <li class="list-group-item"><i class="fa fa-road"></i> Local Charity Outreach</li>
+                            <li class="list-group-item"><i class="fa fa-road"></i> 3rd Party platform integrations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-5">
+            <div class="row no-margin margin-bottom">
+                <div class="col-md-12">
+                    <div class="background-accent-4">
+                        <div class="padded">
+                            <h2>Newsletter Sign Up</h2>
+                        </div>
+                        <div class="background-accent-4-light">
+                            <div class="">
+                                <div class="">
+                                    {% include "signup.html" %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-margin">
+                <div class="col-md-12">
+                    <div class="background-accent-6">
+                        <div class="padded">
+                            <h2>Contact</h2>
+                        </div>
+                        <div class="background-accent-6-light">
+                            <div class="padded">
+                                <ul class="list-unstyled list-group contact">
+                                    <li class="list-group-item"><i class="fa fa-envelope"></i> adam@tinydonation.org</li>
+                                    <li class="list-group-item"><i class="fa fa-twitter"></i> @tinydonation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="col-md-12">
+            <hr class="bold"/>
+        </div>
+        <div class="col-md-3">
+            &copy 2016 TinyDonation
+        </div>
+    </div>
+</footer>
+</body>
+</html>

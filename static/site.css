@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Trirong');
+html,
+body {
+  background-color: #f0f0f0;
+  font-family: 'Trirong', 'Times New Roman', serif;
+  font-size: 18px;
+}
+.background-accent-1 {
+  background-color: #ff8e8e;
+}
+.background-accent-1-light {
+  background-color: #ffc1c1;
+}
+.background-accent-2 {
+  background-color: #a1eea1;
+}
+.background-accent-2-light {
+  background-color: #ccf6cc;
+}
+.background-accent-3 {
+  background-color: #42f5f5;
+}
+.background-accent-4 {
+  background-color: #82e1e1;
+}
+.background-accent-4-light {
+  background-color: #abebeb;
+}
+.background-accent-5 {
+  background-color: #ffc18e;
+}
+.background-accent-5-light {
+  background-color: #ffddc1;
+}
+.background-accent-6 {
+  background-color: #dac3ee;
+}
+.background-accent-6-light {
+  background-color: #f2eaf9;
+}
+div.row {
+  margin-bottom: 20px;
+}
+div.row .margin-bottom {
+  margin-bottom: 20px !important;
+}
+@media (min-width: 991px) {
+  div.row {
+    margin-bottom: 20px;
+  }
+  div.row [class*='col-']:first-of-type {
+    padding-left: 0;
+  }
+  div.row [class*='col-']:last-of-type {
+    padding-right: 0;
+  }
+  div.row .no-margin {
+    margin: 0;
+  }
+}
+.navbar-default {
+  height: 100px;
+  background-color: transparent;
+  border: 0;
+}
+.navbar-default .container {
+  background-color: #2CB8B8;
+  color: #fff !important;
+}
+.navbar-default .container .navbar-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.navbar-default .navbar-brand {
+  font-size: 30px;
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > a:link,
+.navbar-default .navbar-nav > li > a:visited {
+  font-size: 18px;
+  color: #fff;
+  border-bottom: 4px solid transparent;
+}
+.navbar-default .navbar-nav > li > a:link:hover,
+.navbar-default .navbar-nav > li > a:visited:hover {
+  color: #333;
+  border-bottom-color: #fff;
+}
+.padded {
+  padding: 10px 20px;
+}
+hr.bold {
+  border-top-color: #999;
+}
+.list-group-item {
+  background-color: transparent;
+  border-color: transparent;
+}
+.roadmap li .fa {
+  color: #FF7B0E;
+}
+.main-caption-holder {
+  padding: 6em 0;
+  background-color: #e8e8e8;
+}

@@ -38,6 +38,18 @@ body {
 .background-accent-6-light {
   background-color: #f2eaf9;
 }
+.background-accent-7 {
+  background-color: #42f5f5;
+}
+.background-accent-7-light {
+  background-color: #73f8f8;
+}
+.background-accent-8 {
+  background-color: #e6e6e6;
+}
+.background-accent-8-light {
+  background-color: #f7f7f7;
+}
 div.row {
   margin-bottom: 20px;
 }

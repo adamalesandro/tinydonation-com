@@ -12,7 +12,7 @@ def index():
 @app.context_processor
 def inject_values():
     return {
-        "kickstarter_url": "https://kickstarter.com/"
+        "kickstarter_url": "https://www.kickstarter.com/projects/2118183266/tinydonation-encouraging-micro-donations-using-tec"
     }
 
 

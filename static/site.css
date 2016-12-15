@@ -115,3 +115,10 @@ hr.bold {
   padding: 6em 0;
   background-color: #fafafa;
 }
+.btn-primary {
+  background-color: #b687dd;
+  border: 0;
+}
+.btn-primary:hover {
+  background-color: #9E5FD2;
+}

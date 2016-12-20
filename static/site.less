@@ -136,7 +136,7 @@ div.row {
 
     &:hover {
       color: @black;
-      border-bottom-color: @white;
+      //border-bottom-color: @white;
     }
 
   }
@@ -174,5 +174,23 @@ hr.bold {
 
   &:hover {
     background-color:@purple;
+  }
+}
+
+.contact-list {
+  li {
+    a {
+      &:link,
+      &:visited {
+        color:#333;
+      }
+
+      &:hover,
+      &:active {
+        text-decoration: none;
+        color:@purple;
+      }
+    }
+
   }
 }

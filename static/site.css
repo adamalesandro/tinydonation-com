@@ -96,7 +96,6 @@ div.row .margin-bottom {
 .navbar-default .navbar-nav > li > a:link:hover,
 .navbar-default .navbar-nav > li > a:visited:hover {
   color: #333;
-  border-bottom-color: #fff;
 }
 .padded {
   padding: 10px 20px;
@@ -121,4 +120,13 @@ hr.bold {
 }
 .btn-primary:hover {
   background-color: #9E5FD2;
+}
+.contact-list li a:link,
+.contact-list li a:visited {
+  color: #333;
+}
+.contact-list li a:hover,
+.contact-list li a:active {
+  text-decoration: none;
+  color: #9E5FD2;
 }

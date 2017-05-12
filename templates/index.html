@@ -1,21 +1,241 @@
-{% extends "_base.html" %}
-{% block content %}
-    <div class="full-width-image">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TinyDonation: Charitable micro-donation platform</title>
+    <link rel="stylesheet" media="screen" href="/static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" media="screen" href="/static/css/font-awesome.min.css"/>
+    <link rel="stylesheet" media="screen" href="/static/site.css"/>
 
-    </div>
-    <div class="text-center">
-        <h1>Redefining charitable giving using technology</h1>
-    </div>
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        #mc_embed_signup {
+            clear: left;
+        }
 
-    <section class="background-accent-color-1">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Check us out on Kickstarter</h2>
-                <p></p>
-                <a class="btn btn-info" href="#">Contribute</a>
+        #mc_embed_signup input.email {
+            font-size: 22px;
+            padding: 1em;
+            outline: 0;
+            border: 0;
+            font-family: 'Trirong', 'Times New Roman', serif;
+        }
+
+        #mc_embed_signup .button {
+            height: 44px;
+            background-color: #fff;
+            color: #222222;
+        }
+    </style>
+</head>
+<body>
+<header>
+    {% include "_nav.html" %}
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="main-caption-holder">
+                <h1 class="text-center text-muted">
+                    <span>&ldquo;</span>Even a tiny donation can make a huge difference.<span>&rdquo;</span>
+                </h1>
+
             </div>
         </div>
     </div>
-    </section>
-{% endblock %}
+    <div class="row">
+        <div class="col-md-12">
+            <div class="background-accent-6">
+                <div class="padded">
+                    <h2>Help make TinyDonation a reality</h2>
+                </div>
+            </div>
+            <div class="background-accent-6-light">
+                <div class="padded">
+                    <p>
+                        You can help build a charitable platform for micro-giving. TinyDonation is raising money on
+                        kickstarter from people who are passionate about charitable giving. These contributions will
+                        help to help start a platform for tiny donations!
+                    </p>
+                    <p>Since TinyDonation is built on the idea of micro giving, please consider a donation of even just
+                        $1.</p>
+                    <br/>
+                    <a class="btn btn-lg btn-primary" href="{{ kickstarter_url }}">Contribute to our Kickstarter</a>
+                    <br/><br/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-7">
+            <div class="background-accent-2">
+                <div class="padded">
+                    <h2>What is Micro Giving?</h2>
+                </div>
+                <div class="background-accent-2-light">
+                    <div class="padded">
+                        <p>
+                            The &lsquo;micro&rsquo; economy has taken off with the proliferation of crowdfunding,
+                            crowdlending
+                            and in technology with concepts such as microservices. Micro-giving is the idea of donating
+                            small amounts to charitable causes.
+                        </p>
+                        <p>
+                            <a href="http://blog.tinydonation.org" class="">Read our blog &rang;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="background-accent-1">
+                <div class="padded">
+                    <h2>&apos;Tis the season!</h2>
+                </div>
+                <div class="background-accent-1-light">
+                    <div class="padded">
+                        <p>
+                            The Holidays are a special time of the year! While we work on getting TinyDonation started
+                            please
+                            consider donating to those in need. But be sure to subscribe to our newsletter for updates.
+                        </p>
+                        <p>You can also help us by making a contribution to our <a href="{{ kickstarter_url }}">Kickstarter &rang;</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="background-accent-6">
+                <div class="padded">
+                    <h2>Charity Transparency</h2>
+                </div>
+                <div class="background-accent-6-light">
+                    <div class="padded">
+                        <p>
+                            We don't have anything to post yet, but here you'll find a complete account of TinyDonation.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="background-accent-8">
+                <div class="padded">
+                    <h2>Charity Feed</h2>
+                </div>
+                <div class="background-accent-8-light">
+                    <div class="padded">
+                        <p>
+                            As a community of givers, you'll discover new charities that fit with your giving
+                            preferences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-7">
+            <div class="background-accent-5">
+                <div class="padded">
+                    <h2>TinyDonation Road Map</h2>
+                </div>
+                <div class="background-accent-5-light">
+                    <div class="padded">
+                        <ul class="list-unstyled list-group roadmap">
+                            <li class="list-group-item"><i class="fa fa-road"></i> TinyDonation Fundraising
+                                <span class="label label-success">Now!</span>
+                            </li>
+                            <li class="list-group-item"><i class="fa fa-road"></i> Web application development</li>
+                            <li class="list-group-item"><i class="fa fa-road"></i> Native mobile application development
+                            </li>
+                            <li class="list-group-item"><i class="fa fa-road"></i> Platform API</li>
+                            <li class="list-group-item"><i class="fa fa-road"></i> Local Charity Outreach</li>
+                            <li class="list-group-item"><i class="fa fa-road"></i> 3rd Party platform integrations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="row no-margin margin-bottom">
+                <div class="col-md-12">
+                    <div class="background-accent-4">
+                        <div class="padded">
+                            <h2>Newsletter Sign Up</h2>
+                        </div>
+                        <div class="background-accent-4-light">
+                            <div class="">
+                                <div class="">
+                                    {% include "signup.html" %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-margin">
+                <div class="col-md-12">
+                    <div class="background-accent-6">
+                        <div class="padded">
+                            <h2>Contact</h2>
+                        </div>
+                        <div class="background-accent-6-light">
+                            <div class="padded">
+                                <ul class="list-unstyled list-group contact-list">
+                                    <li class="list-group-item">
+                                        <a href="mailto:adam@tinydonation.org">
+                                            <i class="fa fa-envelope"></i> adam@tinydonation.org
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="https://twitter.com/tinydonation" target="_blank">
+                                            <i class="fa fa-twitter"></i> @tinydonation
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="col-md-12">
+            <hr class="bold"/>
+        </div>
+        <div class="col-md-3">
+            &copy 2016 TinyDonation
+            <br/>
+            <br/>
+        </div>
+    </div>
+</footer>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-88223362-2', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

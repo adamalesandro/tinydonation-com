@@ -1,27 +1,196 @@
+//@import-once "css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css?family=Trirong');
+
+@backgroundColor: #f0f0f0;
+
+@blue: #09AFAF;
+@green: #35DB35;
+@red: #FF0E0E;
+@lightBlue: #2CB8B8;
+@white: #fff;
+@black: #333;
+@orange: #FF7B0E;
+@purple: #9E5FD2;
+
+@lightenByAmount: 35%;
+
+html, body {
+  background-color: @backgroundColor;
+  font-family: 'Trirong', 'Times New Roman', serif;
+  font-size: 18px;
+}
+
+.background-accent-1 {
+  background-color: lighten(@red, 25%);
+}
+
+.background-accent-1-light {
+  background-color: lighten(@red, @lightenByAmount);
+}
+
+.background-accent-2 {
+  background-color: lighten(@green, 25%);
+}
+
+.background-accent-2-light {
+  background-color: lighten(@green, @lightenByAmount);
+}
+
+.background-accent-3 {
+  background-color: lighten(@blue, 25%);
+}
+
+.background-accent-4 {
+  background-color: lighten(@lightBlue, 25%);
+}
+
+.background-accent-4-light {
+  background-color: lighten(@lightBlue, @lightenByAmount);
+}
+
+.background-accent-5 {
+  background-color: lighten(@orange, 25%);
+}
+
+.background-accent-5-light {
+  background-color: lighten(@orange, @lightenByAmount);
+}
+
+.background-accent-6 {
+  background-color: lighten(@purple, 25%);
+}
+
+.background-accent-6-light {
+  background-color: lighten(@purple, @lightenByAmount);
+}
+
+.background-accent-7 {
+  background-color: lighten(@blue, 25%);
+}
+
+.background-accent-7-light {
+  background-color: lighten(@blue, @lightenByAmount);
+}
+
+.background-accent-8 {
+  background-color: darken(@white, 10%);
+}
+
+.background-accent-8-light {
+  background-color: darken(@white, 3%);
+}
 
 
-@backgroundAccent1: #cde;
+div.row {
+  margin-bottom: 20px;
 
-.body {
-  padding:0;
-  margin:0;
+  .margin-bottom {
+    margin-bottom: 20px !important;
+  }
+}
+
+@media (min-width: 991px) {
+  div.row {
+    margin-bottom: 20px;
+
+    [class*='col-']:first-of-type {
+      padding-left: 0;
+    }
+
+    [class*='col-']:last-of-type {
+      padding-right: 0;
+    }
+
+    .no-margin {
+      margin: 0;
+    }
+
+  }
 }
 
 .navbar-default {
-  background-color:transparent;
+  height: 100px;
+  background-color: transparent;
+  border: 0;
+
+  .container {
+    background-color: @lightBlue;
+    color: @white !important;
+
+    .navbar-header {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .navbar-brand {
+    font-size: 30px;
+    color: #fff;
+  }
+
+  .navbar-nav > li > a:link,
+  .navbar-nav > li > a:visited {
+    font-size: 18px;
+    color: @white;
+    border-bottom: 4px solid transparent;
+
+    &:hover {
+      color: @black;
+      //border-bottom-color: @white;
+    }
+
+  }
+}
+
+.padded {
+  padding: 10px 20px;
+}
+
+hr.bold {
+  border-top-color: #999;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.roadmap {
+  li {
+    .fa {
+      color: @orange;
+    }
+  }
+}
+
+.main-caption-holder {
+  padding: 6em 0;
+  background-color: lighten(@backgroundColor, 4%);
+}
+
+.btn-primary {
+  background-color: lighten(@purple, 10%);
   border:0;
+
+  &:hover {
+    background-color:@purple;
+  }
 }
 
-.full-width-image {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  min-height:600px;
-  background-image: url("/static/images/16597324-Crumpled-One-Dollar-Bill-Stock-Photo.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-}
+.contact-list {
+  li {
+    a {
+      &:link,
+      &:visited {
+        color:#333;
+      }
 
-.background-accent-color-1 {
-  background-color: @backgroundAccent1;
+      &:hover,
+      &:active {
+        text-decoration: none;
+        color:@purple;
+      }
+    }
+
+  }
 }

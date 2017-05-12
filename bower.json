@@ -1,0 +1,20 @@
+{
+  "name": "tinydonation-com",
+  "homepage": "https://github.com/adamalesandro/tinydonation-com",
+  "authors": [
+    "Adam Alesandro <adamalesandro@outlook.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
